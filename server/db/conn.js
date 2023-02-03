@@ -1,7 +1,8 @@
+require('dotenv').config()
 const mongoose = require('mongoose');
 
 // const DB = process.env.DATABASE;
-const DB='mongodb+srv://owais:owais@ansari@cluster0.cey4jmv.mongodb.net/?retryWrites=true&w=majority'
+const DB=process.env.DATABASE
 
 mongoose.connect(DB, {
     useNewUrlParser: true,
